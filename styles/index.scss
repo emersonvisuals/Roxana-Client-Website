@@ -287,26 +287,31 @@ section {
                 font-size: $mobileButtonText;
             }
         }
-    
+
         .video {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 0 3em 0;
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; 
+            height: 0;
+        }
+
+        
+        .video iframe{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .desktopScribble {
+            display: none;
     
             img {
-                height: auto;
-                width: 100%;
+                display: none;
             }
         }
-    }
 
-    .desktopScribble {
-        display: none;
-
-        img {
-            display: none;
-        }
     }
 }
 
@@ -651,18 +656,22 @@ section {
                     cursor: pointer;
                 }
             }
-
+  
             .video {
-                width: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                img {
-                    width: 50%;
-                }
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%; 
+                height: 0;
             }
 
+            
+            .video iframe{
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
@@ -915,6 +924,7 @@ section {
                     font-style: italic;
                     font-weight: 700;
                     color: $black;
+                    transform: translateY(10px);
                 }
     
             }
@@ -928,7 +938,7 @@ section {
 
                 .firstBox {
                     width: 100%;
-                    padding: 0 0 0 0;
+                    padding: 0 1em 0 0;
                     
                 .sectionInformation {
                     font-size: $desktopParagraph;
@@ -974,26 +984,33 @@ section {
             }
         
             .video {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 0 0 0 5em;
                 position: relative;
-
-                .desktopScribble {
-                    display: initial;
-        
-                    img {
-                        height: auto;
-                        width: 100px;
-                        position: absolute;
-                        top:-58%;
-                        right: -16%;
-                        display: initial;
-                    }
-                }
+                width: 100%;
+                padding-bottom: 56.25%; 
+                height: 0;
             }
 
+            
+            .video iframe{
+                position: absolute;
+                top:20%;
+                left: 0;
+                width: 100%;
+                height: 50%;
+            }
+
+            .desktopScribble {
+                display: initial;
+    
+                img {
+                    height: auto;
+                    width: 100px;
+                    position: absolute;
+                    top:-15%;
+                    right: -15%;
+                    display: initial;
+                }
+            }
         }
 
     }
@@ -1388,6 +1405,7 @@ section {
                     font-style: italic;
                     font-weight: 700;
                     color: $black;
+                    transform: translateY(100px);
                 }
     
             }
@@ -1401,7 +1419,7 @@ section {
 
                 .firstBox {
                     width: 100%;
-                    padding: 0 0 0 0;
+                    padding: 0 2em 0 0;
                     
                 .sectionInformation {
                     font-size: $desktopLargeParagraph;
@@ -1447,23 +1465,31 @@ section {
             }
 
             .video {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 0 0 0 5em;
                 position: relative;
+                width: 100%;
+                padding-bottom: 56.25%; 
+                height: 50%;
+            }
 
-                .desktopScribble {
+            
+            .video iframe{
+                position: absolute;
+                top:20%;
+                left: 0;
+                width: 100%;
+                height: 50%;
+            }
+
+            .desktopScribble {
+                display: initial;
+    
+                img {
+                    height: auto;
+                    width: 100px;
+                    position: absolute;
+                    top:-10%;
+                    right: -15%;
                     display: initial;
-        
-                    img {
-                        height: auto;
-                        width: 100px;
-                        position: absolute;
-                        top:-45%;
-                        right: -15%;
-                        display: initial;
-                    }
                 }
             }
         }
