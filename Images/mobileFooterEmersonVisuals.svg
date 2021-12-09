@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="237.722" height="27.969" viewBox="0 0 237.722 27.969">
+  <g id="mobileFooterEmersonVisuals" transform="translate(0 0)">
+    <g id="Group_28" data-name="Group 28" transform="translate(0 0)">
+      <g id="Group_32" data-name="Group 32">
+        <text id="EMERSON_VISUALS" data-name="EMERSON VISUALS" transform="translate(57.722 20.485)" fill="#3d362c" font-size="18" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0" letter-spacing="0.075em">EMERS</tspan><tspan y="0" letter-spacing="0.074em">O</tspan><tspan y="0" letter-spacing="0.075em">N</tspan><tspan y="0" letter-spacing="0.074em"> </tspan><tspan y="0" letter-spacing="0.075em">VISUAL</tspan><tspan y="0">S</tspan></text>
+        <g id="Group_33" data-name="Group 33" transform="translate(0 0)">
+          <path id="Path_11" data-name="Path 11" d="M9.411,11.8V5.449a.474.474,0,0,1,.473-.473H22.7l3.779,7.3H9.884a.473.473,0,0,1-.473-.473" transform="translate(-9.411 -4.975)" fill="#3d362c"/>
+          <path id="Path_12" data-name="Path 12" d="M9.411,11.034H28.043l3.8,7.331H9.884a.473.473,0,0,1-.473-.473Z" transform="translate(-9.411 -0.722)" fill="#3d362c"/>
+          <path id="Path_13" data-name="Path 13" d="M9.885,17.111H33.4l3.787,7.314H9.885a.474.474,0,0,1-.473-.475V17.584a.473.473,0,0,1,.473-.473" transform="translate(-9.41 3.545)" fill="#3d362c"/>
+          <path id="Path_14" data-name="Path 14" d="M33.557,17.569,27.139,4.975H19.32L33.8,32.944,48.319,4.982H40.068Z" transform="translate(-2.455 -4.975)" fill="#3d362c"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
