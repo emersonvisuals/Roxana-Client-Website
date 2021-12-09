@@ -527,6 +527,10 @@ footer .designAndDevelopment h1 {
   letter-spacing: 0.1em;
 }
 
+footer .designAndDevelopment .businessLogo {
+  margin: 0 1.25em 0 0;
+}
+
 footer .designAndDevelopment .businessLogo img {
   width: 100%;
   height: 1.8em;
