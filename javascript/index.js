@@ -1,10 +1,13 @@
 // hamburger 
 
 const burger = document.querySelector('.hamburger');
+const burgerTrigger = document.querySelector('.hamburgerTrigger');
 const links = document.querySelector('.links');
 const items = document.querySelectorAll('.linksList');
 
-burger.addEventListener('click', function(){
+console.log(burger);
+
+burgerTrigger.addEventListener('click', function(){
     console.log('clicked');
     links.classList.toggle('active');
     burger.classList.toggle('active');
@@ -14,7 +17,9 @@ burger.addEventListener('click', function(){
     } else {
         document.getElementsByTagName('body')[0].style = 'overflow: scroll';
     }
-});
+})
+
+
 
 /*
 function clickOff() {

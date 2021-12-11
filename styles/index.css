@@ -40,7 +40,8 @@ main nav .logo img {
 main nav .hamburger {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
-  cursor: pointer;
+  background-color: red;
+  position: relative;
 }
 
 main nav .hamburger .hamgburgerItem {
@@ -72,6 +73,18 @@ main nav .hamburger .hamgburgerItem::after {
   position: absolute;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
+}
+
+main nav .hamburger .hamburgerTrigger {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 0;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  z-index: 3;
+  cursor: pointer;
 }
 
 main nav .hamburger.active {
