@@ -907,7 +907,7 @@ footer .footerLogo img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 5% 10%;
+    padding: 0 10% 2em 10%;
   }
   main .contents .firstBox {
     padding: 0 4em 0 0;
