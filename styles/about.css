@@ -519,145 +519,236 @@ footer .footerLogo img {
 @media only screen and (min-width: 550px) and (max-width: 1024px) {
   main {
     height: auto;
-    padding: 45px 50px 45px 50px;
+    width: 100%;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 25px 30px 25px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
   }
-  main .heading {
-    padding: 5% 0 0 0;
-    z-index: 1;
+  main nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  main .heading .actor h1 {
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 500%;
-    -webkit-text-fill-color: #5507101c;
-    -webkit-text-stroke: 0.75px #550710;
-    text-align: end;
+  main nav .logo img {
+    width: 70px;
+    height: auto;
   }
-  main .heading .actor span {
-    font-weight: 700;
-    -webkit-text-fill-color: transparent;
+  main nav .hamburger {
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    background-color: red;
+    position: relative;
   }
-  main .heading .name h1 {
-    color: #3D362C;
-    text-transform: uppercase;
-    font-weight: 800;
-    text-align: end;
-    font-size: 325%;
+  main nav .hamburger .hamgburgerItem {
+    content: '';
+    width: 22.72px;
+    height: 3px;
+    background-color: #550710;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
   }
-  main .heading .researcher h1 {
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 500%;
-    -webkit-text-fill-color: #5507101c;
-    -webkit-text-stroke: 0.75px #550710;
-    text-align: end;
+  main nav .hamburger .hamgburgerItem::before {
+    content: '';
+    width: 22.72px;
+    height: 3px;
+    background-color: #550710;
+    margin: -0.5em 0 0 0;
+    position: absolute;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .hamburger .hamgburgerItem::after {
+    content: '';
+    width: 22.72px;
+    height: 3px;
+    background-color: #550710;
+    margin: 0.5em 0 0 0;
+    position: absolute;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .hamburger .hamburgerTrigger {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  main nav .hamburger.active {
+    z-index: 3;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .hamburger.active .hamgburgerItem {
+    background-color: #550710;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .hamburger.active .hamgburgerItem::before {
+    background-color: #FFFFFF;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin: 0;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .hamburger.active .hamgburgerItem::after {
+    background-color: #FFFFFF;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin: 0;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .links {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #550710;
+    top: 0;
+    left: 0;
+    padding: 4em 0 0 2em;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    opacity: 0;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  main nav .links ul {
+    list-style: none;
+    text-decoration: none;
+  }
+  main nav .links ul li {
+    padding: 2em 0;
+    text-decoration: none;
+  }
+  main nav .links ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 26px;
+    font-family: "Vollkorn", serif;
+  }
+  main nav .links .homeContainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #550710;
+    -webkit-transform: translateX(-55px) translateY(30px);
+            transform: translateX(-55px) translateY(30px);
+    opacity: 0;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  main nav .links .aboutContainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #550710;
+    -webkit-transform: translateX(-58px) translateY(30px);
+            transform: translateX(-58px) translateY(30px);
+    opacity: 0;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  main nav .links .projectsContainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #550710;
+    -webkit-transform: translateX(-75px) translateY(30px);
+            transform: translateX(-75px) translateY(30px);
+    opacity: 0;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  main nav .links .contact {
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 26px;
+    font-family: "Vollkorn", serif;
+    padding: 1em 0;
+  }
+  main nav .links.active {
+    opacity: 1;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    z-index: 2;
+    height: 100%;
   }
   main .contents {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 0 0 0;
-  }
-  main .contents .heading {
-    height: auto;
-    z-index: 1;
-  }
-  main .contents .heading .actor {
-    font-size: 0.75rem;
-  }
-  main .contents .heading .name {
-    font-size: 0.75rem;
-  }
-  main .contents .heading .researcher {
-    font-size: 0.75rem;
-  }
-  main .contents .profile img {
-    width: 75%;
-    height: auto;
-    margin: 2em 0 0 0;
-    -webkit-animation: profileAnimation 1s;
-            animation: profileAnimation 1s;
-  }
-  @-webkit-keyframes profileAnimation {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes profileAnimation {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  section {
-    height: auto;
-    width: initial;
-    padding: 45px 50px 45px 50px;
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #FFFFFF;
-  }
-  section .paragraph .sectionTitle {
-    padding: 3em 0;
-  }
-  section .paragraph .sectionTitle h1 {
-    font-family: "Vollkorn", serif;
-    font-size: 32px;
-    font-style: italic;
-    font-weight: 700;
-    color: #3D362C;
-  }
-  section .sectionContent {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+  main .contents .firstBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  section .sectionContent .firstBox .sectionInformation {
+  main .contents .firstBox .heading {
+    padding: 2em 0 2em 0;
+  }
+  main .contents .firstBox .heading .title01 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    color: #3D362C;
+    text-align: end;
+  }
+  main .contents .firstBox .heading .title02 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px #550710;
+    text-align: end;
+    margin: -0.25em 0 0 0;
+  }
+  main .contents .firstBox .details p {
+    color: #3D362C;
     font-size: 20px;
     line-height: 2em;
     padding: 0 0 3em 0;
   }
-  section .sectionContent .firstBox .sectionInformation p {
-    color: #3D362C;
-  }
-  section .sectionContent .firstBox .biographyButtonDiv {
+  main .contents .secondBox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -667,30 +758,11 @@ footer .footerLogo img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0 0 3em 0;
+    padding: 0 0 2em 0;
   }
-  section .sectionContent .firstBox .biographyButtonDiv .biographyButton {
-    width: 100%;
-    height: 60px;
-    border-radius: 2em;
-    border: none;
-    color: #FFFFFF;
-    background-color: #550710;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  section .sectionContent .firstBox .video {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-  }
-  section .sectionContent .firstBox .video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  main .contents .secondBox img {
+    height: auto;
+    width: 50%;
   }
 }
 
@@ -706,7 +778,6 @@ footer .footerLogo img {
   main {
     height: 100vh;
     width: 100%;
-    background-image: url(/Images/desktopBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -760,6 +831,7 @@ footer .footerLogo img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 100%;
   }
   main nav .links ul {
     list-style: none;
@@ -785,13 +857,13 @@ footer .footerLogo img {
     font-size: 23px;
     font-family: "Vollkorn", serif;
   }
-  main nav .links ul li .homeContainer::after {
+  main nav .links ul li .homeContainer:hover::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
-  main nav .links ul li .aboutContainer:hover::after {
+  main nav .links ul li .aboutContainer::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
@@ -832,206 +904,25 @@ footer .footerLogo img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    padding: 0 10%;
-  }
-  main .contents .heading {
-    width: 100%;
-  }
-  main .contents .heading .actor h1 {
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 3.75rem;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.75px #550710;
-    text-align: end;
-    cursor: default;
-  }
-  main .contents .heading .actor h1:hover {
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
-    -webkit-text-fill-color: #5507101c;
-  }
-  main .contents .heading .actor span {
-    font-size: 3.75rem;
-    -webkit-text-fill-color: transparent;
-    cursor: default;
-  }
-  main .contents .heading .name h1 {
-    color: #3D362C;
-    text-transform: uppercase;
-    font-weight: 800;
-    text-align: end;
-    font-size: 2.75rem;
-    cursor: default;
-  }
-  main .contents .heading .researcher h1 {
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 3.75rem;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.75px #550710;
-    text-align: end;
-    cursor: default;
-  }
-  main .contents .heading .researcher h1:hover {
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
-    -webkit-text-fill-color: #5507101c;
-  }
-  main .contents .profile {
-    display: initial;
-    position: absolute;
-    left: 2%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    top: 150px;
-  }
-  main .contents .profile img {
-    width: 40%;
-    height: auto;
-    margin: 0;
-    mix-blend-mode: multiply;
-    -webkit-animation: profileAnimation 1s;
-            animation: profileAnimation 1s;
-  }
-  @-webkit-keyframes profileAnimation {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 100%;
-    }
-  }
-  @keyframes profileAnimation {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 100%;
-    }
-  }
-  section {
-    height: 100vh;
-    width: 100%;
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
-    padding: 0 10%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative;
-  }
-  section .paragraph .sectionTitle h1 {
-    font-family: "Vollkorn", serif;
-    font-size: 50px;
-    font-style: italic;
-    font-weight: 700;
-    color: #3D362C;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  section .sectionContent {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding: 0 10%;
   }
-  section .sectionContent .firstBox {
-    width: 100%;
-    padding: 0 1em 0 0;
+  main .contents .firstBox {
+    padding: 0 4em 0 0;
   }
-  section .sectionContent .firstBox .sectionInformation {
+  main .contents .firstBox .details p {
     font-size: 18px;
-    line-height: 2em;
-    padding: 0 0 2em 0;
   }
-  section .sectionContent .firstBox .sectionInformation p {
-    color: #3D362C;
+  main .contents .secondBox {
+    width: 250%;
   }
-  section .sectionContent .firstBox .biographyButtonDiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 0 3em 0;
-  }
-  section .sectionContent .firstBox .biographyButtonDiv .biographyButton {
-    width: 100%;
-    height: 60px;
-    border-radius: 2em;
-    border: solid 2px;
-    color: #550710;
-    background-color: transparent;
-    font-size: 22px;
-    cursor: pointer;
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-  }
-  section .sectionContent .firstBox .biographyButtonDiv .biographyButton:hover {
-    width: 100%;
-    height: 60px;
-    border-radius: 2em;
-    border: none;
-    color: #FFFFFF;
-    background-color: #550710;
-    font-size: 22px;
-    cursor: pointer;
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-  }
-  section .sectionContent .video {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-  }
-  section .sectionContent .video iframe {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width: 100%;
-    height: 50%;
-  }
-  section .sectionContent .desktopScribble {
-    display: initial;
-  }
-  section .sectionContent .desktopScribble img {
+  main .contents .secondBox img {
     height: auto;
-    width: 100px;
-    position: absolute;
-    top: -15%;
-    right: -15%;
-    display: initial;
+    width: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   footer {
     display: -webkit-box;
@@ -1240,7 +1131,6 @@ footer .footerLogo img {
   main {
     height: 100vh;
     width: 100%;
-    background-image: url(/Images/desktopBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -1294,6 +1184,7 @@ footer .footerLogo img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 100%;
   }
   main nav .links ul {
     list-style: none;
@@ -1319,11 +1210,13 @@ footer .footerLogo img {
     font-size: 23px;
     font-family: "Vollkorn", serif;
   }
-  main nav .links ul li .homeContainer::after {
+  main nav .links ul li .homeContainer:hover::after {
     opacity: 1;
     height: 10px;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
   }
-  main nav .links ul li .aboutContainer:hover::after {
+  main nav .links ul li .aboutContainer::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
@@ -1364,206 +1257,25 @@ footer .footerLogo img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    padding: 0 10%;
-  }
-  main .contents .heading {
-    width: 100%;
-  }
-  main .contents .heading .actor h1 {
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 4.5rem;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.75px #550710;
-    text-align: end;
-    cursor: default;
-  }
-  main .contents .heading .actor h1:hover {
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-    -webkit-text-fill-color: #5507101c;
-  }
-  main .contents .heading .actor span {
-    font-size: 4.5rem;
-    -webkit-text-fill-color: transparent;
-    cursor: default;
-  }
-  main .contents .heading .name h1 {
-    color: #3D362C;
-    text-transform: uppercase;
-    font-weight: 800;
-    text-align: end;
-    font-size: 3.5rem;
-    cursor: default;
-  }
-  main .contents .heading .researcher h1 {
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 4.5rem;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.75px #550710;
-    text-align: end;
-    cursor: default;
-  }
-  main .contents .heading .researcher h1:hover {
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-    -webkit-text-fill-color: #5507101c;
-  }
-  main .contents .profile {
-    display: initial;
-    position: absolute;
-    left: 5%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    top: 140px;
-  }
-  main .contents .profile img {
-    width: 40%;
-    height: auto;
-    margin: 0;
-    mix-blend-mode: multiply;
-    -webkit-animation: profileAnimation 1s;
-            animation: profileAnimation 1s;
-  }
-  @-webkit-keyframes profileAnimation {
-    0% {
-      opacity: 0%;
-    }
-    100% {
-      opacity: 100%;
-    }
-  }
-  @keyframes profileAnimation {
-    0% {
-      opacity: 0%;
-    }
-    100% {
-      opacity: 100%;
-    }
-  }
-  section {
-    height: 100vh;
-    width: 100%;
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
-    padding: 0 10%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative;
-  }
-  section .paragraph .sectionTitle h1 {
-    font-family: "Vollkorn", serif;
-    font-size: 50px;
-    font-style: italic;
-    font-weight: 700;
-    color: #3D362C;
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-  }
-  section .sectionContent {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding: 0 10%;
   }
-  section .sectionContent .firstBox {
-    width: 100%;
-    padding: 0 2em 0 0;
+  main .contents .firstBox {
+    padding: 0 4em 0 0;
   }
-  section .sectionContent .firstBox .sectionInformation {
+  main .contents .firstBox .details p {
     font-size: 20px;
-    line-height: 2em;
-    padding: 0 0 2em 0;
   }
-  section .sectionContent .firstBox .sectionInformation p {
-    color: #3D362C;
+  main .contents .secondBox {
+    width: 175%;
   }
-  section .sectionContent .firstBox .biographyButtonDiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 0 3em 0;
-  }
-  section .sectionContent .firstBox .biographyButtonDiv .biographyButton {
-    width: 100%;
-    height: 60px;
-    border-radius: 2em;
-    border: solid 2px;
-    color: #550710;
-    background-color: transparent;
-    font-size: 22px;
-    cursor: pointer;
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-  }
-  section .sectionContent .firstBox .biographyButtonDiv .biographyButton:hover {
-    width: 100%;
-    height: 60px;
-    border-radius: 2em;
-    border: none;
-    color: #FFFFFF;
-    background-color: #550710;
-    font-size: 22px;
-    cursor: pointer;
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-  }
-  section .sectionContent .video {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 50%;
-  }
-  section .sectionContent .video iframe {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width: 100%;
-    height: 50%;
-  }
-  section .sectionContent .desktopScribble {
-    display: initial;
-  }
-  section .sectionContent .desktopScribble img {
+  main .contents .secondBox img {
     height: auto;
-    width: 100px;
-    position: absolute;
-    top: -10%;
-    right: -15%;
-    display: initial;
+    width: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   footer {
     display: -webkit-box;
@@ -1613,6 +1325,8 @@ footer .footerLogo img {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 4em 0 0;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
   }
   footer .footerDetails .contact h1 {
     color: #550710;
@@ -1734,7 +1448,7 @@ footer .footerLogo img {
     width: 100%;
     margin: 0 0.5em;
   }
-  footer .footerDetails .designAndDevelopment .businessLogo:hover:after {
+  footer .footerDetails .businessLogo:hover:after {
     opacity: 1;
     height: 10px;
   }
