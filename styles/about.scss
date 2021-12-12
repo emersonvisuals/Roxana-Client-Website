@@ -674,7 +674,7 @@ footer {
     
     
     main {
-        height: 100vh;
+        height: auto;
         width: 100%;
         background-repeat: no-repeat;
         background-size:cover;
@@ -785,7 +785,7 @@ footer {
         .contents {
             display: flex;
             flex-direction: row;
-            padding: 0 10%;
+            padding: 5% 10%;
 
             .firstBox {
                 padding: 0 4em 0 0;

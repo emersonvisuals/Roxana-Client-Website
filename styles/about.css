@@ -776,7 +776,7 @@ footer .footerLogo img {
             box-sizing: border-box;
   }
   main {
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -907,7 +907,7 @@ footer .footerLogo img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 10%;
+    padding: 5% 10%;
   }
   main .contents .firstBox {
     padding: 0 4em 0 0;
