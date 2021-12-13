@@ -221,7 +221,6 @@ main {
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
-                    width: calc(100vw - 30px);
                     padding: 0 0 2em 0;
 
                     .contactNameContainer {
@@ -773,25 +772,6 @@ footer {
                         -webkit-text-stroke: 0.75px #550710;
                         text-align: end;
                         margin: -0.25em 0 0 0;
-                    }
-                }
-    
-                .details {
-    
-                    h1 {
-                        font-family: $fontFamily;
-                        font-size: $mobileSubHeadings;
-                        font-style: italic;
-                        font-weight: 700;
-                        color: $black;
-                        padding: 0 0 1em 0;
-                    }
-    
-                    p {
-                        color: $black;
-                        font-size: $mobileParagraph;
-                        line-height: 2em;
-                        padding: 0 0 1em 0;
                     }
                 }
 
