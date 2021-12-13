@@ -130,6 +130,7 @@ main nav .links {
   opacity: 0;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
+  z-index: -1;
 }
 
 main nav .links ul {
@@ -842,6 +843,7 @@ footer .footerLogo img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    z-index: initial;
   }
   main nav .links ul {
     list-style: none;
@@ -1376,6 +1378,7 @@ footer .footerLogo img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    z-index: initial;
   }
   main nav .links ul {
     list-style: none;

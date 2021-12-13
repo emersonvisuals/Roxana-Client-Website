@@ -112,6 +112,7 @@ main {
             overflow-x: hidden;
             opacity: 0;
             transition: 0.25s all;
+            z-index: -1;
 
             ul {
                 list-style: none;
@@ -531,6 +532,7 @@ footer {
                 overflow-x: hidden;
                 opacity: 0;
                 transition: 0.25s all;
+                z-index: -1;
 
                 ul {
                     list-style: none;
@@ -716,6 +718,7 @@ footer {
                 align-items: center;
                 justify-content: center;
                 height: 100%;
+                z-index: initial;
     
                 ul {
                     list-style: none;
@@ -1022,6 +1025,7 @@ footer {
                 align-items: center;
                 justify-content: center;
                 height: 100%;
+                z-index: initial;
     
                 ul {
                     list-style: none;
