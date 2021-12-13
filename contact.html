@@ -40,24 +40,28 @@
                     <form action="https://formsubmit.co/rpauntrifan@gmail.com" method="POST">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://vigorous-panini-748ed2.netlify.app/thankyou.html">
-                        <input type="text" name="name" placeholder="Please enter your name" required>
-                        <input type="email" name="email" placeholder="Please enter your email address" required>
-                        <input type="text" name="name" placeholder="Please enter your message" required>
-                        <button type="submit">Send</button>
+                        <div class="contactNameContainer">
+                            <h1 class = 'contactNameTitle'>Your name</h1>
+                            <input class = 'contactNameInput' type="text" name="name" placeholder="Please enter your name" required>
+                        </div>
+                        <div class="contactEmailContainer">
+                            <h1 class="contactEmailTitle">Your email</h1>
+                            <input class = 'contactEmailInput' type="email" name="email" placeholder="Please enter your email address" required>
+                        </div>
+                        <div class="contactTextContainer">
+                            <h1 class="contactTextTitle">Your message</h1>
+                            <input class = "contactTextInput" type="text" name="name" placeholder="Please enter your message" required>
+                        </div>
+                        
+                        <div class="contactButtonContainer">
+                            <button class = "contactButton" type="submit">Send</button>
+                        </div>
+                        
                    </form>
 
-
-                <div class="buttonWrapper">
-                    <div class="buttonContainer">
-                        <a href="https://www.theatreworks.org.au/program/masha-in-translation"><button class="buttonOne">tickets available here</button></a>
-                    </div>
-                    <div class="scribble">
-                        <img src="/Images/ticketsScribble.png" alt="ticketsScribble">
-                    </div>
-                </div>
             </div>
             <div class="secondBox">
-                <img src="/Images/projectOneImage.png" alt="image">
+                <img src="/Images/contactImage.png" alt="image">
             </div>
         </div>
     </main>
