@@ -1050,13 +1050,13 @@ footer {
                             transition: 0.25s all;
                         }
 
-                        .aboutContainer::after {
+                        .aboutContainer:hover::after {
                             opacity: 1;
                             height: 10px;
                             transition: 0.25s all;
                         }
 
-                        .projectsContainer:hover::after {
+                        .projectsContainer::after  {
                             opacity: 1;
                             height: 10px;
                             transition: 0.25s all;
@@ -1093,26 +1093,129 @@ footer {
         .contents {
             display: flex;
             flex-direction: row;
-            padding: 0 10% 2em 10%;
-
+            align-items: center;
+            padding: 0 10% 5% 10%;
+            
             .firstBox {
-                padding: 0 4em 0 0;
-
-                .details {
-
-                    p {
-                        font-size: $desktopParagraph;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                padding: 0 2em 0 0;
+    
+                .heading {
+                    padding: 2em 0 2em 0;
+    
+                    .title01 {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 300%;
+                        color: $black;
+                        text-align: end;
+                    }
+    
+                    .title02 {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 300%;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke: 0.75px #550710;
+                        text-align: end;
+                        margin: -0.25em 0 0 0;
                     }
                 }
+    
+                .details {
+    
+                    h1 {
+                        font-family: $fontFamily;
+                        font-size: $desktopSubheadings02;
+                        font-style: italic;
+                        font-weight: 700;
+                        color: $black;
+                        padding: 0 0 1em 0;
+                    }
+    
+                    p {
+                        color: $black;
+                        font-size: $desktopLargeParagraph;
+                        line-height: 2em;
+                        padding: 0 0 1em 0;
+                    }
+                }
+
+                .buttonWrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+
+                    .buttonContainer {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        padding: 0;
+                        margin:0;
+        
+                        a {
+                            padding: 0;
+                            margin:0;
+                                
+                            .buttonOne {
+                                width: 95%;
+                                height: 60px;
+                                border-radius: 2em;
+                                border: solid 2px;
+                                color: $darkRed;
+                                background-color: transparent;
+                                font-size: $desktopButtonText;
+                                cursor: pointer;
+                                transition: 0.25s all;
+                            }
+
+                            .buttonOne:hover {
+                                width: 95%;
+                                height: 60px;
+                                border-radius: 2em;
+                                border: none;
+                                color: $white;
+                                background-color: $darkRed;
+                                font-size: $desktopButtonText;
+                                cursor: pointer;
+                                transition: 0.25s all;
+                            }
+                        }
+                    }
+
+                    .scribble {
+                        display:initial;
+                        opacity: 1;
+
+                        img {
+                            opacity: 1;
+                            height: auto;
+                            width: 250px;
+                            z-index: 2;
+                            margin: 0 1em 1em 0;
+                            display: initial;
+                        }
+                    }
+
+                }
             }
-
+    
             .secondBox {
-                width: 100%;
-
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 0 2em 0;
+    
                 img {
                     height: auto;
-                    width: 250px;
-                    transform: translateY(0px);
+                    width: 100%;
                 }
             }
         }
@@ -1277,306 +1380,408 @@ footer {
 
 // desktop large
 @media only screen and (min-width: 1300px) {
-        * {
-            font-family: $fontFamily;
-            font-weight: 400;
-            padding:0;
-            margin:0;
-            box-sizing: border-box;
-        }
-        
-        
-        
-        main {
-            height: auto;
-            width: 100%;
-            background-repeat: no-repeat;
-            background-size:cover;
-            position: relative;
-            padding: 0;
-        
-            nav {
+    * {
+        font-family: $fontFamily;
+        font-weight: 400;
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    
+    
+    
+    main {
+        height: auto;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: relative;
+        padding: 0 0 4em 0;
+    
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            padding: 2em 5%;
+    
+            .logo {
+                
+                img {
+                    width: 80px;
+                    height: auto;
+                }
+            }
+    
+            .hamburger {
+                display: none;
+            }
+    
+            .links {
+                position: initial;
+                width:initial;
+                height:initial;
+                background-color: transparent;
+                top:0;
+                left: 0;
+                padding: 0;
+                margin: 0;
+                opacity: 1;
+                transition: 0.25s all;
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
                 flex-direction: row;
-                padding: 2em 5%;
-        
-                .logo {
-                    
-                    img {
-                        width: 80px;
-                        height: auto;
-                    }
-                }
-        
-                .hamburger {
-                    display: none;
-                }
-        
-                .links {
-                    position: initial;
-                    width:initial;
-                    height:initial;
-                    background-color: transparent;
-                    top:0;
-                    left: 0;
-                    padding: 0;
-                    margin: 0;
-                    opacity: 1;
-                    transition: 0.25s all;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                z-index: initial;
+    
+                ul {
+                    list-style: none;
+                    text-decoration: none;
                     display: flex;
-                    flex-direction: row;
                     align-items: center;
                     justify-content: center;
-                    height: 100%;
-                    z-index: initial;
-        
-                    ul {
-                        list-style: none;
+                    margin: 0 2em 0 0;
+                    
+                    li {
+                        padding: 0 2em;
                         text-decoration: none;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin: 0 2em 0 0;
-                        
-                        li {
-                            padding: 0 2em;
+    
+                        a {
                             text-decoration: none;
-        
-                            a {
-                                text-decoration: none;
-                                color: $black;
-                                font-size: $desktopLinks;
-                                font-family: $fontFamily;
-                            }
+                            color: $black;
+                            font-size: $desktopLinks;
+                            font-family: $fontFamily;
+                        }
 
-                            .homeContainer:hover::after {
-                                opacity: 1;
-                                height: 10px;
-                                transition: 0.25s all;
-                            }
+                        .homeContainer:hover::after {
+                            opacity: 1;
+                            height: 10px;
+                            transition: 0.25s all;
+                        }
 
-                            .aboutContainer::after {
-                                opacity: 1;
-                                height: 10px;
-                                transition: 0.25s all;
-                            }
+                        .aboutContainer:hover::after {
+                            opacity: 1;
+                            height: 10px;
+                            transition: 0.25s all;
+                        }
 
-                            .projectsContainer:hover::after {
-                                opacity: 1;
-                                height: 10px;
-                                transition: 0.25s all;
-                            }
+                        .projectsContainer::after  {
+                            opacity: 1;
+                            height: 10px;
+                            transition: 0.25s all;
                         }
                     }
-        
-                    .contact {
-                        background-color: transparent;
-                        border: solid 1px $darkRed;
-                        color: $darkRed;
-                        font-size: $desktopLinks;
-                        font-family: $fontFamily;
-                        padding: 0.5em 2.5em;
-                        border-radius: 2em;
-                        cursor: pointer;
-                        transition: 0.25s all;
-                    }
                 }
-                
-                .contact:hover {
+    
+                .contact {
+                    background-color: transparent;
+                    border: solid 1px $darkRed;
+                    color: $darkRed;
+                    font-size: $desktopLinks;
+                    font-family: $fontFamily;
+                    padding: 0.5em 2.5em;
+                    border-radius: 2em;
+                    cursor: pointer;
                     transition: 0.25s all;
-                    background-color: $darkRed;
-                    color: $white;
-                }
-
-                .links.active {
-                    opacity: 1;
-                    transition: 0.25s all;
-                    z-index: 2;
                 }
             }
+            
+            .contact:hover {
+                transition: 0.25s all;
+                background-color: $darkRed;
+                color: $white;
+            }
 
-            .contents {
-                display: flex;
-                flex-direction: row;
-                padding: 0 10% 10% 10%;
-
-                .firstBox {
-                    padding: 0 4em 0 0;
-
-                    .details {
-
-                        p {
-                            font-size: $desktopParagraph;
-                        }
-                    }
-                }
-
-                .secondBox {
-                    width: 100%;
-
-                    img {
-                        height: auto;
-                        width: 320px;
-                        transform: translateY(0px);
-                    }
-                }
+            .links.active {
+                opacity: 1;
+                transition: 0.25s all;
+                z-index: 2;
             }
         }
-        
-        
-        footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
-            background-image: url(/Images/desktopFooterBackground.png);
-            background-size: contain;
-            padding: 8em 10%;
 
-            .footerDetails {
+        .contents {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 10% 5% 10%;
+            
+            .firstBox {
                 display: flex;
                 align-items: flex-start;
                 justify-content: flex-start;
-                flex-direction: row;
-
-                .contact {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    flex-direction: column;
-                    padding: 0 4em 0 0;
-                    transition: 0.25s all;
-            
-                    h1 {
-                        color: $darkRed;
+                flex-direction: column;
+                padding: 0 2em 0 0;
+    
+                .heading {
+                    padding: 2em 0 2em 0;
+    
+                    .title01 {
                         text-transform: uppercase;
-                        font-size: 18px;
-                        padding: 1em 0;
-                        letter-spacing: 0.1em;
+                        font-weight: 700;
+                        font-size: 300%;
+                        color: $black;
+                        text-align: end;
                     }
-            
-                    .mobile {
-                        padding: 0 0 1em 1.5em;
-                    }
-            
-                    .mobile::before {
-                        content: '';
-                        position: absolute;
-                        width: 30px;
-                        height: 30px;
-                        background-repeat: no-repeat;
-                        transform: translateX(-25px);
-                        background-image: url(/Images/desktopFooterMobile.svg);
-                    }
-            
-                    .email {
-                        padding: 0 0 0 1.75em;
+    
+                    .title02 {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 300%;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke: 0.75px #550710;
+                        text-align: end;
+                        margin: -0.25em 0 0 0;
                     }
                 }
-            
-                .socials {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    flex-direction: column;
-                    padding: 0 4em 0 0;
-                    width: auto;
-            
+    
+                .details {
+    
                     h1 {
-                        color: $darkRed;
-                        text-transform: uppercase;
-                        font-size: 18px;
-                        padding: 1em 0;
-                        letter-spacing: 0.1em;
+                        font-family: $fontFamily;
+                        font-size: $desktopSubheadings02;
+                        font-style: italic;
+                        font-weight: 700;
+                        color: $black;
+                        padding: 0 0 1em 0;
                     }
-            
-                    .icons {
+    
+                    p {
+                        color: $black;
+                        font-size: $desktopParagraph;
+                        line-height: 2em;
+                        padding: 0 0 1em 0;
+                    }
+                }
+
+                .buttonWrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+
+                    .buttonContainer {
                         display: flex;
                         align-items: center;
-                        justify-content: space-between;
-                        width: 8em;
-            
-                        img {
-                            width: auto;
-                            height: 2em;
-                        }
-
-                        .facebookIcon:hover:after {
-                            height: 10px;
-                            opacity: 1;
-                            transition: 0.25s all;
-                        }
-
-                        .instagramIcon:hover::after {
-                            height: 10px;
-                            opacity: 1;
-                            transition: 0.25s all;
-                        }
-
-                        .youtubeIcon:hover:after {
-                            height: 10px;
-                            opacity: 1;
-                            transition: 0.25s all;
-                        }
-                    }
-                }
-            
-                .designAndDevelopment {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    flex-direction: column;
-                    padding: 0 0 0 0;
-                    width: 100%;
-                    overflow: visible;
-
-                    h1 {
-                        color: $darkRed;
-                        text-transform: uppercase;
-                        font-size: 18px;
-                        padding: 1em 0;
-                        letter-spacing: 0.1em;
-                    }
-            
-                    .businessLogo {
-                        margin: 0 0 0 -1em;
-                        
-                        img {
-                            width: 100%;
-                            height: 1.75em;
-                            margin: 0;
-                            overflow: visible;
-                        }
+                        justify-content: center;
+                        width: 100%;
+                        padding: 0;
+                        margin:0;
         
-                        a { 
-                            overflow: visible;
-                            width: 100%;
-                            margin: 0 0.5em;
+                        a {
+                            padding: 0;
+                            margin:0;
+                                
+                            .buttonOne {
+                                width: 95%;
+                                height: 60px;
+                                border-radius: 2em;
+                                border: solid 2px;
+                                color: $darkRed;
+                                background-color: transparent;
+                                font-size: $desktopButtonText;
+                                cursor: pointer;
+                                transition: 0.25s all;
+                            }
+
+                            .buttonOne:hover {
+                                width: 95%;
+                                height: 60px;
+                                border-radius: 2em;
+                                border: none;
+                                color: $white;
+                                background-color: $darkRed;
+                                font-size: $desktopButtonText;
+                                cursor: pointer;
+                                transition: 0.25s all;
+                            }
                         }
                     }
-                }
 
-                .businessLogo:hover:after {
-                    opacity: 1;
-                    height: 10px;
+                    .scribble {
+                        display:initial;
+                        opacity: 1;
+
+                        img {
+                            opacity: 1;
+                            height: auto;
+                            width: 250px;
+                            z-index: 2;
+                            margin: 0 1em 1em 0;
+                            display: initial;
+                        }
+                    }
+
                 }
             }
-
-            .footerLogo {
+    
+            .secondBox {
                 display: flex;
-                align-items: flex-end;
-                display: initial;
-                justify-content: flex-end;
-
+                align-items: center;
+                justify-content: center;
+                padding: 0 0 2em 0;
+    
                 img {
-                    width: auto;
-                    height: 50px;
-                    margin: 1em 0 0 0;
-                    display: initial;
+                    height: auto;
+                    width: 100%;
                 }
             }
         }
+    }
+    
+    
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        background-image: url(/Images/desktopFooterBackground.png);
+        background-size: contain;
+        padding: 8em 10%;
 
+        .footerDetails {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: row;
+
+            .contact {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                padding: 0 4em 0 0;
+                transition: 0.25s all;
+        
+                h1 {
+                    color: $darkRed;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    padding: 1em 0;
+                    letter-spacing: 0.1em;
+                }
+        
+                .mobile {
+                    padding: 0 0 1em 1.5em;
+                }
+        
+                .mobile::before {
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background-repeat: no-repeat;
+                    transform: translateX(-25px);
+                    background-image: url(/Images/desktopFooterMobile.svg);
+                }
+        
+                .email {
+                    padding: 0 0 0 1.75em;
+                }
+            }
+        
+            .socials {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                padding: 0 4em 0 0;
+                width: auto;
+        
+                h1 {
+                    color: $darkRed;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    padding: 1em 0;
+                    letter-spacing: 0.1em;
+                }
+        
+                .icons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 8em;
+        
+                    img {
+                        width: auto;
+                        height: 2em;
+                    }
+
+                    .facebookIcon:hover:after {
+                        height: 10px;
+                        opacity: 1;
+                        transition: 0.25s all;
+                    }
+
+                    .instagramIcon:hover::after {
+                        height: 10px;
+                        opacity: 1;
+                        transition: 0.25s all;
+                    }
+
+                    .youtubeIcon:hover:after {
+                        height: 10px;
+                        opacity: 1;
+                        transition: 0.25s all;
+                    }
+                }
+            }
+        
+            .designAndDevelopment {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                padding: 0 0 0 0;
+                width: 100%;
+                overflow: visible;
+
+                h1 {
+                    color: $darkRed;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    padding: 1em 0;
+                    letter-spacing: 0.1em;
+                }
+        
+                .businessLogo {
+                    margin: 0 0 0 -1em;
+                    
+                    img {
+                        width: 100%;
+                        height: 1.75em;
+                        margin: 0;
+                        overflow: visible;
+                    }
+    
+                    a { 
+                        overflow: visible;
+                        width: 100%;
+                        margin: 0 0.5em;
+                    }
+                }
+            }
+
+            .businessLogo:hover:after {
+                opacity: 1;
+                height: 10px;
+            }
+        }
+
+        .footerLogo {
+            display: flex;
+            align-items: flex-end;
+            display: initial;
+            justify-content: flex-end;
+
+            img {
+                width: auto;
+                height: 50px;
+                margin: 1em 0 0 0;
+                display: initial;
+            }
+        }
+    }
 }

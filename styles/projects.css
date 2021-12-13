@@ -1219,13 +1219,13 @@ footer .footerLogo img {
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
-  main nav .links ul li .aboutContainer::after {
+  main nav .links ul li .aboutContainer:hover::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
-  main nav .links ul li .projectsContainer:hover::after {
+  main nav .links ul li .projectsContainer::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
@@ -1263,22 +1263,142 @@ footer .footerLogo img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 10% 2em 10%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 10% 5% 10%;
   }
   main .contents .firstBox {
-    padding: 0 4em 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 2em 0 0;
+  }
+  main .contents .firstBox .heading {
+    padding: 2em 0 2em 0;
+  }
+  main .contents .firstBox .heading .title01 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    color: #3D362C;
+    text-align: end;
+  }
+  main .contents .firstBox .heading .title02 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px #550710;
+    text-align: end;
+    margin: -0.25em 0 0 0;
+  }
+  main .contents .firstBox .details h1 {
+    font-family: "Vollkorn", serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    color: #3D362C;
+    padding: 0 0 1em 0;
   }
   main .contents .firstBox .details p {
-    font-size: 18px;
+    color: #3D362C;
+    font-size: 20px;
+    line-height: 2em;
+    padding: 0 0 1em 0;
+  }
+  main .contents .firstBox .buttonWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  main .contents .firstBox .buttonWrapper .buttonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  main .contents .firstBox .buttonWrapper .buttonContainer a {
+    padding: 0;
+    margin: 0;
+  }
+  main .contents .firstBox .buttonWrapper .buttonContainer a .buttonOne {
+    width: 95%;
+    height: 60px;
+    border-radius: 2em;
+    border: solid 2px;
+    color: #550710;
+    background-color: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  main .contents .firstBox .buttonWrapper .buttonContainer a .buttonOne:hover {
+    width: 95%;
+    height: 60px;
+    border-radius: 2em;
+    border: none;
+    color: #FFFFFF;
+    background-color: #550710;
+    font-size: 22px;
+    cursor: pointer;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  main .contents .firstBox .buttonWrapper .scribble {
+    display: initial;
+    opacity: 1;
+  }
+  main .contents .firstBox .buttonWrapper .scribble img {
+    opacity: 1;
+    height: auto;
+    width: 250px;
+    z-index: 2;
+    margin: 0 1em 1em 0;
+    display: initial;
   }
   main .contents .secondBox {
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 0 2em 0;
   }
   main .contents .secondBox img {
     height: auto;
-    width: 250px;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    width: 100%;
   }
   footer {
     display: -webkit-box;
@@ -1490,7 +1610,7 @@ footer .footerLogo img {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 0;
+    padding: 0 0 4em 0;
   }
   main nav {
     display: -webkit-box;
@@ -1573,13 +1693,13 @@ footer .footerLogo img {
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
-  main nav .links ul li .aboutContainer::after {
+  main nav .links ul li .aboutContainer:hover::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
-  main nav .links ul li .projectsContainer:hover::after {
+  main nav .links ul li .projectsContainer::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
@@ -1617,22 +1737,142 @@ footer .footerLogo img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 10% 10% 10%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 10% 5% 10%;
   }
   main .contents .firstBox {
-    padding: 0 4em 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 2em 0 0;
+  }
+  main .contents .firstBox .heading {
+    padding: 2em 0 2em 0;
+  }
+  main .contents .firstBox .heading .title01 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    color: #3D362C;
+    text-align: end;
+  }
+  main .contents .firstBox .heading .title02 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px #550710;
+    text-align: end;
+    margin: -0.25em 0 0 0;
+  }
+  main .contents .firstBox .details h1 {
+    font-family: "Vollkorn", serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    color: #3D362C;
+    padding: 0 0 1em 0;
   }
   main .contents .firstBox .details p {
+    color: #3D362C;
     font-size: 18px;
+    line-height: 2em;
+    padding: 0 0 1em 0;
+  }
+  main .contents .firstBox .buttonWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  main .contents .firstBox .buttonWrapper .buttonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  main .contents .firstBox .buttonWrapper .buttonContainer a {
+    padding: 0;
+    margin: 0;
+  }
+  main .contents .firstBox .buttonWrapper .buttonContainer a .buttonOne {
+    width: 95%;
+    height: 60px;
+    border-radius: 2em;
+    border: solid 2px;
+    color: #550710;
+    background-color: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  main .contents .firstBox .buttonWrapper .buttonContainer a .buttonOne:hover {
+    width: 95%;
+    height: 60px;
+    border-radius: 2em;
+    border: none;
+    color: #FFFFFF;
+    background-color: #550710;
+    font-size: 22px;
+    cursor: pointer;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  main .contents .firstBox .buttonWrapper .scribble {
+    display: initial;
+    opacity: 1;
+  }
+  main .contents .firstBox .buttonWrapper .scribble img {
+    opacity: 1;
+    height: auto;
+    width: 250px;
+    z-index: 2;
+    margin: 0 1em 1em 0;
+    display: initial;
   }
   main .contents .secondBox {
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 0 2em 0;
   }
   main .contents .secondBox img {
     height: auto;
-    width: 320px;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    width: 100%;
   }
   footer {
     display: -webkit-box;
