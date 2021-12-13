@@ -122,7 +122,7 @@ main nav .hamburger.active .hamgburgerItem::after {
 main nav .links {
   position: absolute;
   width: 100%;
-  height: 200%;
+  height: 100%;
   background-color: #550710;
   top: 0;
   left: 0;
@@ -700,7 +700,7 @@ footer .footerLogo img {
   main nav .links {
     position: absolute;
     width: 100%;
-    height: 200%;
+    height: 100%;
     background-color: #550710;
     top: 0;
     left: 0;
