@@ -323,7 +323,13 @@ section .sectionContent .biographyButtonDiv {
   padding: 0 0 3em 0;
 }
 
-section .sectionContent .biographyButtonDiv .biographyButton {
+section .sectionContent .biographyButtonDiv a {
+  width: 100%;
+  height: 60px;
+  border-radius: 2em;
+}
+
+section .sectionContent .biographyButtonDiv a .biographyButton {
   width: 100%;
   height: 50px;
   border-radius: 2em;
@@ -743,10 +749,12 @@ footer .footerLogo img {
             justify-content: center;
     padding: 0 0 3em 0;
   }
-  section .sectionContent .firstBox .biographyButtonDiv .biographyButton {
+  section .sectionContent .firstBox .biographyButtonDiv a {
     width: 100%;
     height: 60px;
     border-radius: 2em;
+  }
+  section .sectionContent .firstBox .biographyButtonDiv a .biographyButton {
     border: none;
     color: #FFFFFF;
     background-color: #550710;
