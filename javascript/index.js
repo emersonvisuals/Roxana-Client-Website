@@ -5,6 +5,13 @@ const burgerTrigger = document.querySelector('.hamburgerTrigger');
 const links = document.querySelector('.links');
 const items = document.querySelectorAll('.linksList');
 
+const home = document.querySelector('a.homeContainer');
+const about = document.querySelector('a.aboutContainer');
+const projects = document.querySelector('a.projectsContainer');
+const contact = document.querySelector('a.contactContainer');
+
+console.log(home);
+
 console.log(burger);
 
 burgerTrigger.addEventListener('click', function(){
@@ -17,19 +24,4 @@ burgerTrigger.addEventListener('click', function(){
     } else {
         document.getElementsByTagName('body')[0].style = 'overflow: scroll';
     }
-})
-
-
-
-/*
-function clickOff() {
-    if (onclick !== items) {
-        links.classList.remove('active');
-        burger.classList.remove('active');
-    } else {
-        return
-    }
-}
-
-clickOff();
-*/
+});
