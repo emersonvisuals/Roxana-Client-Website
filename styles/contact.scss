@@ -215,6 +215,7 @@ main {
             }
 
             .details {
+                width: 100%;
 
                 form {
                     display: flex;
@@ -222,68 +223,70 @@ main {
                     justify-content: center;
                     flex-direction: column;
                     padding: 0 0 2em 0;
+                    width: 100%;
 
                     .contactNameContainer {
-                        width: 100%;
                         padding: 0 0 2em 0;
+                        width: 100%;
 
                         .contactNameTitle {
-                            width: 100%;
                             font-family: $fontFamily;
                             font-size: $mobileSubHeadings;
                             font-style: italic;
                             font-weight: 700;
                             color: $black;
                             padding: 0 0 0.5em 0;
+                            width: 100%;
                         }
 
                         .contactNameInput {
-                            width: 100%;
                             padding: 1em 0 1em 1em;
                             border: solid 2px $darkRed;
+                            width: 100%;
                         }
                     }
 
                     
                     .contactEmailContainer {
-                        width: 100%;
                         padding: 0 0 2em 0;
+                        width: 100%;
 
                         .contactEmailTitle {
-                            width: 100%;
                             font-family: $fontFamily;
                             font-size: $mobileSubHeadings;
                             font-style: italic;
                             font-weight: 700;
                             color: $black;
                             padding: 0 0 0.5em 0;
+                            width: 100%;
                         }
 
                         .contactEmailInput {
-                            width: 100%;
                             padding: 1em 0 1em 1em;
                             border: solid 2px $darkRed;
+                            width: 100%;
                         }
                     }
 
                     .contactTextContainer {
-                        width: 100%;
                         padding: 0 0 2em 0;
+                        width: 100%;
 
                         .contactTextTitle {
-                            width: 100%;
                             font-family: $fontFamily;
                             font-size: $mobileSubHeadings;
                             font-style: italic;
                             font-weight: 700;
                             color: $black;
                             padding: 0 0 0.5em 0;
+                            width: 100%;
                         }
 
                         .contactTextInput {
-                            width: 100%;
                             padding: 1em 0 1em 1em;
                             border: solid 2px $darkRed;
+                            width: 100%;
+                            height: 8em;
                         }
                     }
 
