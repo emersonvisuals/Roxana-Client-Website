@@ -1136,6 +1136,20 @@ footer {
                             color: $white;
                         }
                     }
+
+                    .scribble {
+                        display:initial;
+                        opacity: 1;
+    
+                        img {
+                            opacity: 1;
+                            height: auto;
+                            width: 200px;
+                            z-index: 2;
+                            margin: 0 1em 1em 0;
+                            display: initial;
+                        }
+                    }
                 }
             }
 
@@ -1473,6 +1487,20 @@ footer {
                             button.buttonOne:hover {
                                 background-color: $darkRed;
                                 color: $white;
+                            }
+                        }
+
+                        .scribble {
+                            display:initial;
+                            opacity: 1;
+        
+                            img {
+                                opacity: 1;
+                                height: auto;
+                                width: 200px;
+                                z-index: 2;
+                                margin: 0 1em 1em 0;
+                                display: initial;
                             }
                         }
                     }

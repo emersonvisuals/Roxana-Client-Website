@@ -1296,6 +1296,18 @@ footer .footerLogo img {
     background-color: #550710;
     color: #FFFFFF;
   }
+  main .contents .firstBox .buttonWrapper .scribble {
+    display: initial;
+    opacity: 1;
+  }
+  main .contents .firstBox .buttonWrapper .scribble img {
+    opacity: 1;
+    height: auto;
+    width: 200px;
+    z-index: 2;
+    margin: 0 1em 1em 0;
+    display: initial;
+  }
   main .contents .secondBox {
     width: 100%;
   }
@@ -1674,6 +1686,18 @@ footer .footerLogo img {
   main .contents .firstBox .buttonWrapper .buttonContainer button.buttonOne:hover {
     background-color: #550710;
     color: #FFFFFF;
+  }
+  main .contents .firstBox .buttonWrapper .scribble {
+    display: initial;
+    opacity: 1;
+  }
+  main .contents .firstBox .buttonWrapper .scribble img {
+    opacity: 1;
+    height: auto;
+    width: 200px;
+    z-index: 2;
+    margin: 0 1em 1em 0;
+    display: initial;
   }
   main .contents .secondBox {
     width: 100%;
