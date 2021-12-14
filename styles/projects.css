@@ -1219,13 +1219,13 @@ footer .footerLogo img {
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
-  main nav .links ul li .aboutContainer::after {
+  main nav .links ul li .aboutContainer:hover::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
-  main nav .links ul li .projectsContainer:hover::after {
+  main nav .links ul li .projectsContainer::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
@@ -1573,13 +1573,13 @@ footer .footerLogo img {
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
-  main nav .links ul li .aboutContainer::after {
+  main nav .links ul li .aboutContainer:hover::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
-  main nav .links ul li .projectsContainer:hover::after {
+  main nav .links ul li .projectsContainer::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;

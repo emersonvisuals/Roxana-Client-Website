@@ -1051,13 +1051,13 @@ footer {
                             transition: 0.25s all;
                         }
 
-                        .aboutContainer::after {
+                        .aboutContainer:hover::after {
                             opacity: 1;
                             height: 10px;
                             transition: 0.25s all;
                         }
 
-                        .projectsContainer:hover::after {
+                        .projectsContainer::after {
                             opacity: 1;
                             height: 10px;
                             transition: 0.25s all;
@@ -1358,13 +1358,13 @@ footer {
                                 transition: 0.25s all;
                             }
 
-                            .aboutContainer::after {
+                            .aboutContainer:hover::after {
                                 opacity: 1;
                                 height: 10px;
                                 transition: 0.25s all;
                             }
 
-                            .projectsContainer:hover::after {
+                            .projectsContainer::after {
                                 opacity: 1;
                                 height: 10px;
                                 transition: 0.25s all;

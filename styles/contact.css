@@ -122,7 +122,7 @@ main nav .hamburger.active .hamgburgerItem::after {
 main nav .links {
   position: absolute;
   width: 100%;
-  height: 200%;
+  height: 100%;
   background-color: #550710;
   top: 0;
   left: 0;
@@ -215,9 +215,10 @@ main .contents {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
 }
 
 main .contents .firstBox {
@@ -234,6 +235,7 @@ main .contents .firstBox {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 main .contents .firstBox .heading {
@@ -297,8 +299,9 @@ main .contents .firstBox .details form .contactNameContainer .contactNameTitle {
 
 main .contents .firstBox .details form .contactNameContainer .contactNameInput {
   padding: 1em 0 1em 1em;
-  border: solid 2px #550710;
+  border: solid 1px #550710;
   width: 100%;
+  font-size: 15px;
 }
 
 main .contents .firstBox .details form .contactEmailContainer {
@@ -318,8 +321,9 @@ main .contents .firstBox .details form .contactEmailContainer .contactEmailTitle
 
 main .contents .firstBox .details form .contactEmailContainer .contactEmailInput {
   padding: 1em 0 1em 1em;
-  border: solid 2px #550710;
+  border: solid 1px #550710;
   width: 100%;
+  font-size: 15px;
 }
 
 main .contents .firstBox .details form .contactTextContainer {
@@ -339,9 +343,10 @@ main .contents .firstBox .details form .contactTextContainer .contactTextTitle {
 
 main .contents .firstBox .details form .contactTextContainer .contactTextInput {
   padding: 1em 0 1em 1em;
-  border: solid 2px #550710;
+  border: solid 1px #550710;
   width: 100%;
   height: 8em;
+  font-size: 15px;
 }
 
 main .contents .firstBox .details form .contactButtonContainer {
@@ -355,6 +360,7 @@ main .contents .firstBox .details form .contactButtonContainer {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  cursor: pointer;
 }
 
 main .contents .firstBox .details form .contactButtonContainer .contactButton {
@@ -364,10 +370,12 @@ main .contents .firstBox .details form .contactButtonContainer .contactButton {
   border: none;
   color: #FFFFFF;
   background-color: #550710;
+  border: solid 1px #550710;
   font-size: 18px;
   text-transform: capitalize;
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 
 main .contents .firstBox .buttonWrapper {
@@ -433,21 +441,35 @@ main .contents .firstBox .buttonWrapper .scribble img {
 }
 
 main .contents .secondBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 0 2em 0;
+  padding: 0;
+}
+
+main .contents .secondBox .heading {
+  padding: 2em 0 2em 0;
+  position: initial;
+  top: 0;
+}
+
+main .contents .secondBox .heading .title01 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 300%;
+  color: #3D362C;
+  text-align: end;
+}
+
+main .contents .secondBox .heading .title02 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 300%;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.75px #550710;
+  text-align: end;
+  margin: -0.25em 0 0 0;
 }
 
 main .contents .secondBox img {
-  height: auto;
-  width: 100%;
+  display: none;
 }
 
 footer {
@@ -796,7 +818,7 @@ footer .footerLogo img {
   main nav .links {
     position: absolute;
     width: 100%;
-    height: 200%;
+    height: 100%;
     background-color: #550710;
     top: 0;
     left: 0;
@@ -880,9 +902,10 @@ footer .footerLogo img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
   }
   main .contents .firstBox {
     display: -webkit-box;
@@ -898,6 +921,7 @@ footer .footerLogo img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
   main .contents .firstBox .heading {
     padding: 2em 0 2em 0;
@@ -917,6 +941,111 @@ footer .footerLogo img {
     -webkit-text-stroke: 0.75px #550710;
     text-align: end;
     margin: -0.25em 0 0 0;
+  }
+  main .contents .firstBox .details {
+    width: 100%;
+  }
+  main .contents .firstBox .details form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0 2em 0;
+    width: 100%;
+  }
+  main .contents .firstBox .details form .contactNameContainer {
+    padding: 0 0 2em 0;
+    width: 100%;
+  }
+  main .contents .firstBox .details form .contactNameContainer .contactNameTitle {
+    font-family: "Vollkorn", serif;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 700;
+    color: #3D362C;
+    padding: 0 0 0.5em 0;
+    width: 100%;
+  }
+  main .contents .firstBox .details form .contactNameContainer .contactNameInput {
+    padding: 1em 0 1em 1em;
+    border: solid 1px #550710;
+    width: 100%;
+    font-size: 15px;
+  }
+  main .contents .firstBox .details form .contactEmailContainer {
+    padding: 0 0 2em 0;
+    width: 100%;
+  }
+  main .contents .firstBox .details form .contactEmailContainer .contactEmailTitle {
+    font-family: "Vollkorn", serif;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 700;
+    color: #3D362C;
+    padding: 0 0 0.5em 0;
+    width: 100%;
+  }
+  main .contents .firstBox .details form .contactEmailContainer .contactEmailInput {
+    padding: 1em 0 1em 1em;
+    border: solid 1px #550710;
+    width: 100%;
+    font-size: 15px;
+  }
+  main .contents .firstBox .details form .contactTextContainer {
+    padding: 0 0 2em 0;
+    width: 100%;
+  }
+  main .contents .firstBox .details form .contactTextContainer .contactTextTitle {
+    font-family: "Vollkorn", serif;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 700;
+    color: #3D362C;
+    padding: 0 0 0.5em 0;
+    width: 100%;
+  }
+  main .contents .firstBox .details form .contactTextContainer .contactTextInput {
+    padding: 1em 0 1em 1em;
+    border: solid 1px #550710;
+    width: 100%;
+    height: 8em;
+    font-size: 15px;
+  }
+  main .contents .firstBox .details form .contactButtonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    cursor: pointer;
+  }
+  main .contents .firstBox .details form .contactButtonContainer .contactButton {
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    border: none;
+    color: #FFFFFF;
+    background-color: #550710;
+    border: solid 1px #550710;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
   }
   main .contents .firstBox .buttonWrapper {
     display: -webkit-box;
@@ -943,14 +1072,15 @@ footer .footerLogo img {
             justify-content: center;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 0 2em 0;
   }
   main .contents .firstBox .buttonWrapper .buttonContainer a {
     padding: 0;
     margin: 0;
+    width: 100%;
   }
   main .contents .firstBox .buttonWrapper .buttonContainer a .buttonOne {
-    width: 95%;
+    width: 100%;
     height: 50px;
     border-radius: 2em;
     border: none;
@@ -962,32 +1092,43 @@ footer .footerLogo img {
     margin: 0;
   }
   main .contents .firstBox .buttonWrapper .scribble {
-    display: initial;
+    display: none;
     opacity: 1;
   }
   main .contents .firstBox .buttonWrapper .scribble img {
-    opacity: 1;
     height: auto;
     width: 250px;
     z-index: 2;
     margin: 0 1em 1em 0;
-    display: initial;
+    display: none;
+    opacity: 1;
   }
   main .contents .secondBox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 0 2em 0;
+    padding: 0;
+  }
+  main .contents .secondBox .heading {
+    padding: 2em 0 2em 0;
+    position: initial;
+    top: 0;
+  }
+  main .contents .secondBox .heading .title01 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    color: #3D362C;
+    text-align: end;
+  }
+  main .contents .secondBox .heading .title02 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px #550710;
+    text-align: end;
+    margin: -0.25em 0 0 0;
   }
   main .contents .secondBox img {
-    height: auto;
-    width: 100%;
+    display: none;
   }
   footer {
     display: -webkit-box;
@@ -1307,16 +1448,16 @@ footer .footerLogo img {
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
-  main nav .links ul li .projectsContainer::after {
+  main nav .links ul li .projectsContainer:hover::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
   main nav .links .contact {
-    background-color: transparent;
+    background-color: #550710;
+    color: #FFFFFF;
     border: solid 1px #550710;
-    color: #550710;
     font-size: 23px;
     font-family: "Vollkorn", serif;
     padding: 0.5em 2.5em;
@@ -1324,12 +1465,6 @@ footer .footerLogo img {
     cursor: pointer;
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
-  }
-  main nav .contact:hover {
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #550710;
-    color: #FFFFFF;
   }
   main nav .links.active {
     opacity: 1;
@@ -1348,7 +1483,8 @@ footer .footerLogo img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 10% 5% 10%;
+    padding: 0 10% 10% 10%;
+    position: relative;
   }
   main .contents .firstBox {
     display: -webkit-box;
@@ -1365,25 +1501,6 @@ footer .footerLogo img {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 2em 0 0;
-  }
-  main .contents .firstBox .heading {
-    padding: 2em 0 2em 0;
-  }
-  main .contents .firstBox .heading .title01 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 300%;
-    color: #3D362C;
-    text-align: end;
-  }
-  main .contents .firstBox .heading .title02 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 300%;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.75px #550710;
-    text-align: end;
-    margin: -0.25em 0 0 0;
   }
   main .contents .firstBox .details h1 {
     font-family: "Vollkorn", serif;
@@ -1476,11 +1593,40 @@ footer .footerLogo img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0 4em 2em 0;
+    display: initial;
+  }
+  main .contents .secondBox .heading {
     padding: 0 0 2em 0;
+    position: absolute;
+    top: 0;
+  }
+  main .contents .secondBox .heading .title01 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    color: #3D362C;
+    text-align: end;
+  }
+  main .contents .secondBox .heading .title02 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px #550710;
+    text-align: end;
+    margin: -0.25em 0 0 0;
   }
   main .contents .secondBox img {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     height: auto;
-    width: 100%;
+    width: 250px;
+    display: initial;
+  }
+  main .contents .secondBox .contactScribble img {
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
   }
   footer {
     display: -webkit-box;
@@ -1692,7 +1838,7 @@ footer .footerLogo img {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 0 0 4em 0;
+    padding: 0;
   }
   main nav {
     display: -webkit-box;
@@ -1781,29 +1927,23 @@ footer .footerLogo img {
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
-  main nav .links ul li .projectsContainer::after {
+  main nav .links ul li .projectsContainer:hover::after {
     opacity: 1;
     height: 10px;
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
   }
   main nav .links .contact {
-    background-color: transparent;
-    border: solid 1px #550710;
-    color: #550710;
+    background-color: #550710;
+    color: #FFFFFF;
     font-size: 23px;
     font-family: "Vollkorn", serif;
+    border: solid 1px #550710;
     padding: 0.5em 2.5em;
     border-radius: 2em;
     cursor: pointer;
     -webkit-transition: 0.25s all;
     transition: 0.25s all;
-  }
-  main nav .contact:hover {
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #550710;
-    color: #FFFFFF;
   }
   main nav .links.active {
     opacity: 1;
@@ -1822,7 +1962,8 @@ footer .footerLogo img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 10% 5% 10%;
+    padding: 0 10% 10% 10%;
+    position: relative;
   }
   main .contents .firstBox {
     display: -webkit-box;
@@ -1840,25 +1981,6 @@ footer .footerLogo img {
             flex-direction: column;
     padding: 0 2em 0 0;
   }
-  main .contents .firstBox .heading {
-    padding: 2em 0 2em 0;
-  }
-  main .contents .firstBox .heading .title01 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 300%;
-    color: #3D362C;
-    text-align: end;
-  }
-  main .contents .firstBox .heading .title02 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 300%;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.75px #550710;
-    text-align: end;
-    margin: -0.25em 0 0 0;
-  }
   main .contents .firstBox .details h1 {
     font-family: "Vollkorn", serif;
     font-size: 40px;
@@ -1869,7 +1991,7 @@ footer .footerLogo img {
   }
   main .contents .firstBox .details p {
     color: #3D362C;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 2em;
     padding: 0 0 1em 0;
   }
@@ -1950,11 +2072,40 @@ footer .footerLogo img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0 4em 2em 0;
+    display: initial;
+  }
+  main .contents .secondBox .heading {
     padding: 0 0 2em 0;
+    position: absolute;
+    top: 0;
+  }
+  main .contents .secondBox .heading .title01 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    color: #3D362C;
+    text-align: end;
+  }
+  main .contents .secondBox .heading .title02 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 300%;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px #550710;
+    text-align: end;
+    margin: -0.25em 0 0 0;
   }
   main .contents .secondBox img {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     height: auto;
-    width: 100%;
+    width: 250px;
+    display: initial;
+  }
+  main .contents .secondBox .contactScribble img {
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
   }
   footer {
     display: -webkit-box;
