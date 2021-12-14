@@ -1267,6 +1267,15 @@ footer .footerLogo img {
   }
   main .contents .firstBox {
     padding: 0 4em 0 0;
+    position: relative;
+  }
+  main .contents .firstBox .heading {
+    position: absolute;
+    top: 0;
+    padding: 0;
+  }
+  main .contents .firstBox .details {
+    padding: 8em 0 0 0;
   }
   main .contents .firstBox .details p {
     font-size: 18px;
@@ -1621,6 +1630,15 @@ footer .footerLogo img {
   }
   main .contents .firstBox {
     padding: 0 4em 0 0;
+    position: relative;
+  }
+  main .contents .firstBox .heading {
+    position: absolute;
+    top: 0;
+    padding: 0;
+  }
+  main .contents .firstBox .details {
+    padding: 8em 0 0 0;
   }
   main .contents .firstBox .details p {
     font-size: 18px;

@@ -791,7 +791,13 @@ footer {
             padding: 0 10% 2em 10%;
 
             .firstBox {
+                position: relative;
                 padding: 0 4em 0 0;
+
+                .heading {
+                    top:0;
+                    padding: 0 0 2em 0;
+                }
 
                 .details {
 
@@ -987,7 +993,6 @@ footer {
             width: 100%;
             background-repeat: no-repeat;
             background-size:cover;
-            position: relative;
             padding: 0;
         
             nav {
@@ -1096,11 +1101,19 @@ footer {
                 display: flex;
                 flex-direction: row;
                 padding: 0 10% 10% 10%;
+                position: relative;
 
                 .firstBox {
                     padding: 0 4em 0 0;
 
+                    .heading {
+                        position: absolute;
+                        top:0;
+                        padding: 0;
+                    }
+
                     .details {
+                        padding: 4em 0 0 0;
 
                         p {
                             font-size: $desktopParagraph;

@@ -913,7 +913,12 @@ footer .footerLogo img {
     padding: 0 10% 2em 10%;
   }
   main .contents .firstBox {
+    position: relative;
     padding: 0 4em 0 0;
+  }
+  main .contents .firstBox .heading {
+    top: 0;
+    padding: 0 0 2em 0;
   }
   main .contents .firstBox .details p {
     font-size: 18px;
@@ -1136,7 +1141,6 @@ footer .footerLogo img {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     padding: 0;
   }
   main nav {
@@ -1265,9 +1269,18 @@ footer .footerLogo img {
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 0 10% 10% 10%;
+    position: relative;
   }
   main .contents .firstBox {
     padding: 0 4em 0 0;
+  }
+  main .contents .firstBox .heading {
+    position: absolute;
+    top: 0;
+    padding: 0;
+  }
+  main .contents .firstBox .details {
+    padding: 4em 0 0 0;
   }
   main .contents .firstBox .details p {
     font-size: 18px;

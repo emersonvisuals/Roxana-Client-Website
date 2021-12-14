@@ -1098,8 +1098,16 @@ footer {
 
             .firstBox {
                 padding: 0 4em 0 0;
+                position: relative;
+
+                .heading {
+                    position: absolute;
+                    top: 0;
+                    padding: 0;
+                }
 
                 .details {
+                    padding: 8em 0 0 0;
 
                     p {
                         font-size: $desktopParagraph;
@@ -1405,8 +1413,17 @@ footer {
 
                 .firstBox {
                     padding: 0 4em 0 0;
+                    position: relative;
+
+                    .heading {
+                        position: absolute;
+                        top:0;
+                        padding: 0;
+                    }
 
                     .details {
+                        padding: 8em 0 0 0;
+
 
                         p {
                             font-size: $desktopParagraph;
