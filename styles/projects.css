@@ -1280,6 +1280,22 @@ footer .footerLogo img {
   main .contents .firstBox .details p {
     font-size: 18px;
   }
+  main .contents .firstBox .buttonWrapper .buttonContainer button.buttonOne {
+    width: 100%;
+    height: 60px;
+    border-radius: 2em;
+    border: solid 2px;
+    color: #550710;
+    background-color: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  main .contents .firstBox .buttonWrapper .buttonContainer button.buttonOne:hover {
+    background-color: #550710;
+    color: #FFFFFF;
+  }
   main .contents .secondBox {
     width: 100%;
   }
@@ -1642,6 +1658,22 @@ footer .footerLogo img {
   }
   main .contents .firstBox .details p {
     font-size: 18px;
+  }
+  main .contents .firstBox .buttonWrapper .buttonContainer button.buttonOne {
+    width: 100%;
+    height: 60px;
+    border-radius: 2em;
+    border: solid 2px;
+    color: #550710;
+    background-color: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  main .contents .firstBox .buttonWrapper .buttonContainer button.buttonOne:hover {
+    background-color: #550710;
+    color: #FFFFFF;
   }
   main .contents .secondBox {
     width: 100%;
