@@ -304,17 +304,20 @@ main {
 
                         .contactButton {
                             width: 100%;
-                            height: 50px;
+                            height: 60px;
                             border-radius: 0;
-                            border: none;
-                            color: $white;
-                            background-color: $darkRed;
-                            border: solid 1px $darkRed;
-                            font-size: $mobileButtonText;
-                            text-transform: capitalize;
-                            padding: 0;
-                            margin:0;
+                            border: solid 2px;
+                            color: $darkRed;
+                            background-color: transparent;
+                            font-size: $desktopButtonText;
                             cursor: pointer;
+                            transition: 0.25s all;
+                            cursor: pointer;
+                        }
+
+                        .contactButton:hover {
+                            background-color: $darkRed;
+                            color: $white;
                         }
                     }
                 }
@@ -1853,7 +1856,7 @@ footer {
                 .contactScribble {
 
                     img {
-                        transform: translateY(80px);
+                        transform: translateY(90px);
                     }
                 }
             }

@@ -365,17 +365,21 @@ main .contents .firstBox .details form .contactButtonContainer {
 
 main .contents .firstBox .details form .contactButtonContainer .contactButton {
   width: 100%;
-  height: 50px;
+  height: 60px;
   border-radius: 0;
-  border: none;
-  color: #FFFFFF;
-  background-color: #550710;
-  border: solid 1px #550710;
-  font-size: 18px;
-  text-transform: capitalize;
-  padding: 0;
-  margin: 0;
+  border: solid 2px;
+  color: #550710;
+  background-color: transparent;
+  font-size: 22px;
   cursor: pointer;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  cursor: pointer;
+}
+
+main .contents .firstBox .details form .contactButtonContainer .contactButton:hover {
+  background-color: #550710;
+  color: #FFFFFF;
 }
 
 main .contents .firstBox .buttonWrapper {
@@ -2104,8 +2108,8 @@ footer .footerLogo img {
     display: initial;
   }
   main .contents .secondBox .contactScribble img {
-    -webkit-transform: translateY(80px);
-            transform: translateY(80px);
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
   }
   footer {
     display: -webkit-box;
